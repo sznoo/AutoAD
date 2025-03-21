@@ -1,0 +1,468 @@
+
+<!-- saved from url=(0049)https://www.robots.ox.ac.uk/~vgg/research/autoad/ -->
+<html><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="./AutoAD III_files/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-1V9V6G0E2D');
+  </script>
+
+  <!-- head -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="">
+  <meta name="description" content="AutoAD III: The Prequel -- Back to the Pixels">
+  <title>AutoAD III</title>
+
+  <script src="./AutoAD III_files/jsapi" type="text/javascript"></script>
+  <script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+  <link rel="stylesheet" type="text/css" href="./AutoAD III_files/text.css">
+
+  <!-- <meta property="og:image" content="asset/images/memdpc-arch.png"> -->
+  <meta property="og:title" content="AutoAD III">
+
+  </head><body __processed_75a746e5-cdb4-4ebf-a7e6-ce9b194c078a__="true" data-new-gr-c-s-check-loaded="14.1226.0" data-gr-ext-installed=""><nav>
+    <ul>
+        <li><a href="https://www.robots.ox.ac.uk/~vgg/research/autoad/v1.html">AutoAD-I</a></li>
+        <li><a href="https://www.robots.ox.ac.uk/~vgg/research/autoad/v2.html">AutoAD-II</a></li>
+        <li><a href="https://www.robots.ox.ac.uk/~vgg/research/autoad/index.html">AutoAD-III</a></li>
+    </ul>
+  </nav>
+
+
+
+
+<br>
+<br>
+<br>
+
+<center>
+  <span style="font-size:36px"> 
+    AutoAD III: The Prequel -- Back to the Pixels </span></center>
+  <br>
+
+  <table align="center" width="600px">
+    <tbody><tr>
+      <td align="center" width="120px">
+        <center>
+          <span style="font-size:22px">
+            <a href="https://tengdahan.github.io/" target="_blank">Tengda Han
+            </a><sup>1</sup></span>
+        </center>
+      </td>
+      <td align="center" width="120px">
+        <center>
+          <span style="font-size:22px">
+            <a href="https://www.maxbain.com/" target="_blank">Max Bain
+            </a><sup>1</sup></span>
+        </center>
+      </td>
+      <td align="center" width="120px">
+        <center>
+          <span style="font-size:22px">
+            <a href="https://a-nagrani.github.io/" target="_blank">Arsha Nagrani
+            </a><sup>1</sup></span>
+        </center>
+      </td></tr>
+      <tr>
+      <td align="center" width="120px">
+        <center>
+          <span style="font-size:22px">
+            <a href="https://imagine.enpc.fr/~varolg/" target="_blank">Gül Varol
+            </a><sup>1,2</sup></span>
+        </center>
+      </td>
+      <td align="center" width="120px">
+        <center>
+          <span style="font-size:22px">
+            <a href="https://weidixie.github.io/" target="_blank">Weidi Xie
+            </a><sup>1,3</sup></span>
+        </center>
+      </td>
+      <td align="center" width="140px">
+        <center>
+          <span style="font-size:22px">
+            <a href="http://www.robots.ox.ac.uk/~az" target="_blank">Andrew Zisserman
+          </a><sup>1</sup></span>
+        </center>
+      </td>
+    </tr></tbody>
+  </table>
+
+  <span style="font-size:20px">
+    </span><center>
+        </center><table align="center" width="800px">
+    <tbody>
+      <tr><td><center>
+          <sup>1</sup>Visual Geometry Group, University of Oxford
+        </center></td></tr>
+        <tr><td><center>
+          <sup>2</sup>LIGM, École des Ponts, Univ Gustave Eiffel, CNRS
+        </center></td></tr>
+        <tr><td><center>
+          <sup>3</sup>CMIC, Shanghai Jiao Tong University
+        </center></td></tr>
+      
+    </tbody>
+    
+
+    <tbody><tr>
+    <td align="center" width="800px">
+      <center>
+        <br>
+        <div style="font-size:18px">htd@robots.ox.ac.uk</div>
+      </center>
+    </td>
+    </tr>
+  </tbody></table>
+
+<br>
+<br>
+<center>
+  <div class="container">
+    <div class="row">
+      <center>
+        <img src="./AutoAD III_files/v3-teaser.jpg" alt="AD-III figure" style="width: 80%; object-fit: cover; max-width:100%;">
+      </center>
+      <p></p>
+      </div>
+    
+    <i>Cinema is a matter of what's in the frame and what's out. 
+      <br> -- Martin Scorsese</i>
+</div></center>
+
+<br>
+<!-- <hr>
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/gMQSoib6lSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center> -->
+<!-- <br> -->
+<hr>
+
+<center><h1>Abstract</h1>
+  <div align="justify">
+    <p>
+Generating Audio Description (AD) for movies is a challenging task that requires fine-grained visual understanding 
+and an awareness of the characters and their names. Currently, visual language models for AD generation are limited 
+by a lack of suitable training data, and also their evaluation is hampered by using performance measures not 
+specialized to the AD domain. In this paper, we make three contributions: 
+(i) We propose two approaches for constructing AD datasets with aligned video data, and build training and evaluation 
+datasets using these. These datasets will be publicly released; 
+(ii) We develop a Q-former-based architecture which ingests raw video and generates AD, using frozen pre-trained
+  visual encoders and large language models; 
+and (iii) We provide new evaluation metrics to benchmark AD quality that are well-matched to human performance. 
+Taken together, we improve the state of the art on AD generation.
+    </p>
+  </div>
+</center>
+
+<br>
+
+<hr>
+<center><h1 id="examples">Qualitative Examples from AutoAD-III
+  <a href="https://www.robots.ox.ac.uk/~vgg/research/autoad/#examples" style="font-size: 80%">¶</a>
+</h1></center>
+
+<center>
+<video id="video" controls="">
+  <source src="assets/output_2024.mp4" type="video/mp4" width="560">
+  <track label="English" kind="subtitles" srclang="en" src="assets/output_2024.vtt" default="">
+</video>
+</center>
+
+<br>
+In this stitched example,
+the AD ground-truth and our model predictions are provided as subtitles with the format <tt>`[title] ground-truth | prediction`</tt>.
+The voice of AD is generated from OpenAI <a href="https://platform.openai.com/docs/guides/text-to-speech">text-to-speech API</a> and fused with the original movie soundtrack.
+<br><br>
+The movie clips in the video are from: 
+<a href="https://www.imdb.com/title/tt0212338/">Meet the Parents (2000)</a>,
+<a href="https://www.imdb.com/title/tt3062096/">Inferno (2016)</a>,
+<a href="https://www.imdb.com/title/tt0119528/">Liar Liar (1997)</a>,
+<a href="https://www.imdb.com/title/tt0088763/">Back to the Future (1985)</a>,
+<a href="https://www.imdb.com/title/tt3530002/">The Night Before (2015)</a>,
+<a href="https://www.imdb.com/title/tt4196776/">Jason Bourne (2016)</a>,
+<a href="https://www.imdb.com/title/tt3470600/">Sing (2016)</a>.
+All of them are from the CMD-AD-Eval set.
+
+<br>
+<br>
+
+<hr>
+<center><h1 id="examples">New Datasets
+  <a href="https://www.robots.ox.ac.uk/~vgg/research/autoad/#datasets" style="font-size: 80%">¶</a>
+</h1></center>
+
+<table id="mytable" style="width:100%">
+  <tbody><tr>
+    <td style="width:13%"><b>Dataset</b></td>
+    <td style="width:15%"><b>Download</b></td>
+    <td style="width:15%"><b>Video source</b></td>
+    <td style="width:15%"><b>Text source</b></td>
+    <td style="width:8%"><b># AD</b></td>
+    <td><b>Information</b></td>
+  </tr>
+  <tr>
+    <td><b>CMD-AD</b></td>
+    <td><a href="http://www.robots.ox.ac.uk/~htd/ad3/cmd_ad_anno_v1.csv">[18MB, csv]</a></td>
+    <td>CMD</td>
+    <td>AudioVault</td>
+    <td>101k</td>
+    <td>
+      AD dataset with video pixels. Aligned texts from AudioVault with videos from CMD.
+    </td>
+  </tr>
+  <tr>
+    <td><b>HowTo-AD</b></td>
+    <td>[coming soon]</td>
+    <td>HowTo100M</td>
+    <td>modified from HowToCaption</td>
+    <td>3.4M</td>
+    <td>
+      Large pre-training dataset for AD. Modified video captions to mimick AD style.
+    </td>
+  </tr>
+</tbody></table>
+
+<br><br>
+
+<hr>
+<center><h1 id="examples">New Metrics
+  <a href="https://www.robots.ox.ac.uk/~vgg/research/autoad/#metrics" style="font-size: 80%">¶</a>
+</h1></center>
+
+<ul style=" margin-bottom: 20px;">
+  <li><b>CRITIC</b> (Co-Referencing In Text for Identifying Characters):
+    <ul>
+      <li><a href="https://github.com/TengdaHan/AutoAD/blob/main/autoad_iii/metrics/critic_metric.py">critic_metric.py</a></li>
+  </ul>
+  </li>
+  <li><b>LLM-AD-Eval</b>: Use LLM to evaluate AD quality.
+      <ul>
+          <li>LLM-AD-Eval with <tt>gpt-3.5-turbo</tt>: <a href="https://github.com/TengdaHan/AutoAD/blob/main/autoad_iii/metrics/llm_ad_eval_llama.py">llm_ad_eval_gpt.py</a></li>
+          <li>LLM-AD-Eval with <tt>llama-2-7b-chat</tt>: <a href="https://github.com/TengdaHan/AutoAD/blob/main/autoad_iii/metrics/llm_ad_eval_llama.py">llm_ad_eval_llama.py</a></li>
+      </ul>
+  </li>
+</ul>
+
+<br><br>
+
+<script type="text/javascript">
+  function show_hide(eid) {
+      var x = document.getElementById(eid);
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+</script>
+
+
+<hr>
+<center><h1 id="publications">Publications
+  <a href="https://www.robots.ox.ac.uk/~vgg/research/autoad/#publications" style="font-size: 80%">¶</a>
+</h1></center>
+
+<table align="center" width="700px">
+  <tbody><tr>
+    <td>
+      <a href="https://www.robots.ox.ac.uk/~vgg/research/autoad/"><img class="layered-paper" style="height:175px" src="./AutoAD III_files/AD-III-firstpage.png"></a>
+    </td>
+
+    <td width="500px">
+      <span style="font-size:18px">
+      <div class="title">
+      <b>AutoAD III: The Prequel -- Back to the Pixels.</b>
+      </div>
+
+      <div class="authors">
+      Tengda Han,
+      Max Bain,
+      Arsha Nagrani,
+      Gül Varol,
+      Weidi Xie,
+      Andrew Zisserman
+      </div>
+
+      <div class="conf">
+      <b>CVPR, 2024</b>
+      </div>
+      <br>
+      
+      <div class="links">
+      <a href="javascript:;" onclick="show_hide(&#39;BibHan24&#39;)"> Bibtex </a> 
+      | <a href="https://www.robots.ox.ac.uk/~vgg/publications/2024/Han24/han24.pdf"> PDF </a> 
+      | <a href="https://arxiv.org/abs/2404.14412"> arXiv </a>
+      <!-- | <a href="https://youtu.be/bF8HhL84x70"> Video </a> -->
+      | <a href="https://github.com/TengdaHan/AutoAD"> Code </a> 
+      <!-- | <a href=""> Video </a>  -->
+      </div>
+
+      <div style="display: none;" class="BibtexExpand" id="BibHan24">
+        <div style="width:500px;overflow:visible;">
+          <pre class="bibtex" style="font-size:12px">@InProceedings{han2024autoad3,
+title={{AutoAD III: The Prequel} - Back to the Pixels},  
+author={Tengda Han and Max Bain and Arsha Nagrani and G\"ul Varol and Weidi Xie and Andrew Zisserman},  
+booktitle={CVPR},  
+year={2024}}
+          </pre>
+        </div>
+      </div>
+      </span>
+    </td>
+  </tr>
+
+  <tr style="height:50px">
+    <td width="500px" colspan="2"><center><span style="font-size:18px;">
+      ----- Previous works of the Trilogy: -----
+    </span></center></td>
+  </tr>
+
+  <tr>
+    <td>
+      <a href="https://www.robots.ox.ac.uk/~vgg/research/autoad/v2.html"><img class="layered-paper" style="height:175px" src="./AutoAD III_files/AD-II-firstpage.png"></a>
+    </td>
+
+  <td width="500px">
+      <span style="font-size:18px">
+      <div class="title">
+      <b>AutoAD II: The Sequel -- Who, When, and What in Movie Audio Description.</b>
+      </div>
+
+      <div class="authors">
+      Tengda Han,
+      Max Bain,
+      Arsha Nagrani,
+      Gül Varol,
+      Weidi Xie,
+      Andrew Zisserman
+      </div>
+
+      <div class="conf">
+      <b>ICCV, 2023</b>
+      </div>
+      <br>
+      
+      <div class="links">
+      <a href="javascript:;" onclick="show_hide(&#39;BibHan23&#39;)"> Bibtex </a> 
+      | <a href="https://www.robots.ox.ac.uk/~vgg/publications/2023/Han23a/han23a.pdf"> PDF </a> 
+      | <a href="https://arxiv.org/abs/2310.06838"> arXiv </a>
+      <!-- | <a href="https://youtu.be/bF8HhL84x70"> Video </a> -->
+      | <a href="https://github.com/TengdaHan/AutoAD"> Code </a> 
+      | <a href="https://www.robots.ox.ac.uk/~vgg/research/autoad/v2.html"> Previous project page </a> 
+      </div>
+
+      <div style="display: none;" class="BibtexExpand" id="BibHan23">
+      <div style="width:500px;overflow:visible;">
+      <pre class="bibtex" style="font-size:12px">@InProceedings{han2023autoad2,
+title={{AutoAD II: The Sequel} - Who, When, and What in Movie Audio Description},  
+author={Tengda Han and Max Bain and Arsha Nagrani and G\"ul Varol and Weidi Xie and Andrew Zisserman},  
+booktitle={ICCV},  
+year={2023}}
+      </pre>
+      </div>
+      </div>
+
+      </span>
+    </td>
+  </tr>
+
+  <tr style="height:20px"></tr>
+
+  <tr>
+    <td>
+        <a href="https://www.robots.ox.ac.uk/~vgg/research/autoad/v1.html"><img class="layered-paper" style="height:175px" src="./AutoAD III_files/AD-I-firstpage.png"></a>
+    </td>
+
+    <td width="500px">
+        <span style="font-size:18px">
+        <div class="title">
+        <b>AutoAD: Movie Description in Context.</b>
+        </div>
+
+        <div class="authors">
+        Tengda Han*,
+        Max Bain*,
+        Arsha Nagrani,
+        Gül Varol,
+        Weidi Xie,
+        Andrew Zisserman
+        </div>
+
+        <div class="conf">
+        <b>[Highlight] CVPR, 2023</b>
+        </div>
+        <br>
+        
+        <div class="links">
+        <a href="javascript:;" onclick="show_hide(&#39;BibHan22&#39;)"> Bibtex </a> 
+        | <a href="https://www.robots.ox.ac.uk/~vgg/publications/2023/Han23/han23.pdf"> PDF </a> 
+        | <a href="https://arxiv.org/abs/2303.16899"> arXiv </a>
+        <!-- | <a href="https://www.youtube.com/watch?v=gMQSoib6lSI"> Video </a> -->
+        | <a href="https://github.com/TengdaHan/AutoAD/tree/main/autoad_i"> Code </a> 
+        | <a href="https://www.robots.ox.ac.uk/~vgg/research/autoad/v1.html"> Previous project page </a> 
+        </div>
+
+        <div style="display: none;" class="BibtexExpand" id="BibHan22">
+        <div style="width:500px;overflow:visible;">
+        <pre class="bibtex" style="font-size:12px">@InProceedings{han2023autoad,
+title={{AutoAD}: Movie Description in Context},  
+author={Tengda Han and Max Bain and Arsha Nagrani and G\"ul Varol and Weidi Xie and Andrew Zisserman},  
+booktitle={CVPR},  
+year={2023}}
+        </pre>
+        </div>
+        </div>
+
+        </span>
+    </td>
+
+  </tr>
+</tbody></table>
+<br><br>
+
+<!-- <hr> -->
+
+
+<br><br>
+<hr>
+<center><h1>Acknowledgements</h1></center>
+This research is funded by EPSRC PG VisualAI EP/T028572/1, and ANR-21-CE23-0003-01 CorVis.
+
+<br><br>
+<br><br>
+
+<p style="text-align:center;font-size:14px;">
+    Webpage template modified from <a href="https://richzhang.github.io/splitbrainauto/">Richard Zhang</a>.
+</p>
+
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
