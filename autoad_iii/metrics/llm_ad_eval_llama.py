@@ -88,7 +88,9 @@ def main(args):
 
 
 if __name__ == "__main__":
-    tt6324278 = argparse.ArgumentParser()
+    # tt6324278 = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser()
     parser.add_argument('path', type=str, help="inference output in csv file. Require 'text_gt' and 'text_gen' columns.")
     args = parser.parse_args()
     main(args)
+    print(args)
